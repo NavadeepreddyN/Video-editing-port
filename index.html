@@ -1,54 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dheep | Video & Thumbnail Editor</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-ring"></div>
+
     <div class="app-container">
-        
+
         <aside class="sidebar">
+
             <div class="profile-card">
+
                 <div class="image-wrapper">
-                    <img src="photos/me.jpg" alt="Dheep" class="profile-pic" onerror="this.src='https://via.placeholder.com/150/222222/FFFFFF?text=Dheep'">
+                    <img src="photos/me.jpg"
+                         alt="Dheep"
+                         class="profile-pic"
+                         onerror="this.src='https://via.placeholder.com/150/222222/FFFFFF?text=Dheep'">
                 </div>
+
                 <h1 class="name">NAVADEEP REDDY</h1>
+
                 <h2 class="title">Video & Thumbnail Editor</h2>
-                <p class="bio">Crafting high-retention, cinematic edits and high-CTR thumbnails for top creators.</p>
-                
+
+                <p class="bio">
+                    Crafting high-retention, cinematic edits and high-CTR thumbnails for top creators.
+                </p>
+
                 <div class="links">
-                    <a href="https://www.instagram.com/dheepsss__/" target="_blank" class="social-btn">Follow on Instagram</a>
+                    <a href="https://www.instagram.com/dheepsss__/"
+                       target="_blank"
+                       class="social-btn">
+                        Follow on Instagram
+                    </a>
                 </div>
+
             </div>
+
         </aside>
 
         <main class="gallery-container">
-            
+
             <div class="tabs-container">
-                <button id="tab-videos" class="tab-btn active">Video Edits</button>
-                <button id="tab-thumbnails" class="tab-btn">Thumbnail Designs</button>
+                <button id="tab-videos" class="tab-btn active">
+                    Video Edits
+                </button>
+
+                <button id="tab-thumbnails" class="tab-btn">
+                    Thumbnail Designs
+                </button>
             </div>
-            
+
             <div class="masonry-layout" id="video-gallery"></div>
+
             <div class="masonry-layout hidden" id="thumbnail-gallery"></div>
 
             <footer>
                 <p>&copy; 2026 Navadeep Reddy. All Rights Reserved.</p>
-                <a href="mailto:navadeepreddy295@gmail.com" class="footer-email">Contact me: navadeepreddy295@gmail.com</a>
+
+                <a href="mailto:navadeepreddy295@gmail.com"
+                   class="footer-email">
+                    Contact me: navadeepreddy295@gmail.com
+                </a>
             </footer>
+
         </main>
 
     </div>
 
     <div id="lightbox" class="lightbox hidden">
-        <button id="lightbox-close" class="lightbox-close">&times;</button>
-        <div id="lightbox-content" class="lightbox-content">
-            </div>
+
+        <button id="lightbox-close" class="lightbox-close">
+            &times;
+        </button>
+
+        <div id="lightbox-content" class="lightbox-content"></div>
+
     </div>
 
     <script src="script.js"></script>
+
 </body>
-</html> 
+</html>
